@@ -1,3 +1,5 @@
+import numpy as np
+
 def make_grid(x0, h, n):
     """Рівновіддалені вузли x_i = x_0 + i*h, i = 0..n."""
     return x0 + h * np.arange(n + 1, dtype=float)

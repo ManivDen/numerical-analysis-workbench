@@ -1,3 +1,8 @@
+import ast
+import operator
+import numpy as np
+from scipy.special import erf
+
 def laplace_probability_integral(x):
     """Phi(x) = 1/sqrt(2*pi) * integral from 0 to x exp(-t^2/2) dt."""
     return 0.5 * erf(np.asarray(x, dtype=float) / np.sqrt(2.0))

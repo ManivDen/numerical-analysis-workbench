@@ -1,3 +1,5 @@
+import numpy as np
+
 def lagrange_interpolation(x_nodes, y_nodes, x_values):
     x_nodes = np.asarray(x_nodes, dtype=float)
     y_nodes = np.asarray(y_nodes, dtype=float)
